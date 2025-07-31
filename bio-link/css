@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top, as bio section is below */
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Light grey background */
+    margin: 0;
+    padding: 20px;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 450px; /* Adjust max-width as needed */
+    box-sizing: border-box;
+    margin-bottom: 40px; /* Space between card and bio section */
+}
+
+.profile-image-container {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-right: 20px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px; /* Slightly rounded corners for the image */
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+.profile-details {
+    flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.role {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 10px 0;
+}
+
+.company {
+    font-size: 16px;
+    color: #777;
+    margin: 0 0 15px 0;
+}
+
+.google-link {
+    color: #1a73e8; /* Google blue */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.google-link:hover {
+    text-decoration: underline;
+}
+
+.bio-icon {
+    width: 40px; /* Adjust size of the bio image icon */
+    height: auto;
+    display: block; /* Ensure it takes its own line for spacing */
+    margin-top: 10px; /* Space above the icon */
+}
+
+.bio-link {
+    display: inline-block; /* Allows us to apply margin/padding correctly to the image link */
+    line-height: 0; /* Remove extra space below image */
+}
+
+/* Bio Section Styling */
+.bio-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    display: none; /* Hidden by default, will be shown if scrolled to via link */
+    /* For demonstration, we'll keep it hidden. In a real scenario,
+       you might want to reveal it with JavaScript or just let it scroll. */
+}
+
+.bio-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.bio-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
