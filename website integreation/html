@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animals Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div id="home" class="page">
+    <h1>Animals</h1>
+    <div class="animals-container">
+      <div class="animal-card">
+        <img src="https://assets.ccbp.in/frontend/static-website/animals-turtle-img.png" />
+        <button onclick="showPage('turtle')">View Details</button>
+      </div>
+      <div class="animal-card">
+        <img src="https://assets.ccbp.in/frontend/static-website/animals-raccoon-img.png" />
+        <button onclick="showPage('raccoon')">View Details</button>
+      </div>
+      <div class="animal-card">
+        <img src="https://assets.ccbp.in/frontend/static-website/animals-kangaroo-img.png" />
+        <button onclick="showPage('kangaroo')">View Details</button>
+      </div>
+      <div class="animal-card">
+        <img src="https://assets.ccbp.in/frontend/static-website/animals-lion-img.png" />
+        <button onclick="showPage('lion')">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Turtle Page -->
+  <div id="turtle" class="page detail-page" style="background-image: url('https://assets.ccbp.in/frontend/static-website/animals-turtle-bg.png')">
+    <p class="animal-title">Sea turtles</p>
+    <p class="animal-desc">Sea turtles are reptiles of the order Testudines.</p>
+    <button onclick="showPage('home')">Back</button>
+  </div>
+
+  <!-- Raccoon Page -->
+  <div id="raccoon" class="page detail-page" style="background-image: url('https://assets.ccbp.in/frontend/static-website/animals-raccoon-bg.png')">
+    <p class="animal-title">Raccoon</p>
+    <p class="animal-desc">Raccoon is a medium-sized mammal native to North America.</p>
+    <button onclick="showPage('home')">Back</button>
+  </div>
+
+  <!-- Kangaroo Page -->
+  <div id="kangaroo" class="page detail-page" style="background-image: url('https://assets.ccbp.in/frontend/static-website/animals-kangaroo-bg.png')">
+    <p class="animal-title">Kangaroos</p>
+    <p class="animal-desc">Kangaroos are large marsupials that are found only in Australia.</p>
+    <button onclick="showPage('home')">Back</button>
+  </div>
+
+  <!-- Lion Page -->
+  <div id="lion" class="page detail-page" style="background-image: url('https://assets.ccbp.in/frontend/static-website/animals-lion-bg.png')">
+    <p class="animal-title">Lions</p>
+    <p class="animal-desc">Lions are large carnivorous mammals of the Felidae family.</p>
+    <button onclick="showPage('home')">Back</button>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.style.display = 'none');
+      document.getElementById(pageId).style.display = 'flex';
+    }
+
+    // Show home page by default
+    showPage('home');
+  </script>
+</body>
+</html>
