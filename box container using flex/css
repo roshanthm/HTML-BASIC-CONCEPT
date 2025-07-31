@@ -1,0 +1,12 @@
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: #6c5ce7; /* Purple color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 8px;
+}
