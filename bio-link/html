@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny's Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-image-container">
+            <img src="https://assets.ccbp.in/frontend/static-website/profile-img.png" alt="Jenny's Profile Picture" class="profile-picture">
+        </div>
+        <div class="profile-details">
+            <h1 class="name">Jenny</h1>
+            <p class="role">Software Developer</p>
+            <p class="company">Working at <a href="https://www.google.com" target="_blank" class="google-link">Google</a></p>
+            <a href="#bio-section" class="bio-link">
+                <img src="https://assets.ccbp.in/frontend/static-website/bio-img.png" alt="Bio Icon" class="bio-icon">
+            </a>
+        </div>
+    </div>
+
+    <div id="bio-section" class="bio-section">
+        <h2>About Jenny</h2>
+        <p>Jenny is a passionate software developer with expertise in web technologies. She enjoys solving complex problems and contributing to open-source projects. In her free time, she likes hiking and reading tech blogs.</p>
+        </div>
+</body>
+</html>
